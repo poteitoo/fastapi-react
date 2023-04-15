@@ -1,0 +1,21 @@
+{
+    "folders": [
+        {
+            "name": "ROOT",
+            "path": "../"
+        },
+        {
+            "name": "packages/api",
+            "path": "../packages/api"
+        },
+    ],
+    "settings": {
+        "python.languageServer": "Pylance",
+        "files.exclude": {
+            ".turbo/": true,
+            ".venv/": true,
+            "node_modules/": true,
+            "packages/": true
+        },
+    }
+}
