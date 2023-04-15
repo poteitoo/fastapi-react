@@ -1,5 +1,8 @@
+# node
 node_modules/
 dist/
-__pycache__/
-
 .turbo
+
+# python
+__pycache__/
+.venv/
