@@ -7,6 +7,12 @@
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
+		"ghcr.io/devcontainers-contrib/features/ripgrep:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/fd:1": {
+			"version": "latest"
+		},
 		"ghcr.io/devcontainers/features/aws-cli:1": {
 			"version": "latest"
 		},
