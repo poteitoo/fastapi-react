@@ -45,8 +45,18 @@
 		}
 	},
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pnpm depend:install"
+	"postCreateCommand": "pnpm depend:install",
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// This can be used to network with other containers or the host.
 	// "forwardPorts": [5000, 5432],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"rangav.vscode-thunder-client",
+				"esbenp.prettier-vscode",
+				"GitHub.vscode-pull-request-github",
+				"mhutchie.git-graph"
+			]
+		}
+	}
 }
