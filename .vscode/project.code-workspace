@@ -5,6 +5,10 @@
             "path": "../"
         },
         {
+            "name": "apps/front",
+            "path": "../apps/front"
+        },
+        {
             "name": "packages/api",
             "path": "../packages/api"
         },
@@ -15,7 +19,8 @@
             ".turbo/": true,
             ".venv/": true,
             "node_modules/": true,
-            "packages/": true
+            "packages/": true,
+            "apps/": true
         },
     }
 }
