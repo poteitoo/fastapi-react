@@ -4,6 +4,8 @@
   "scripts": {
     "dev": "poetry run uvicorn src.main:app --reload",
     "lint": "pnpm format && poetry run flake8 .",
-    "format": "poetry run black . && poetry run isort ."
+    "format": "poetry run black . && poetry run isort .",
+    "depend:install": "poetry install",
+    "depend:update": "poetry update"
   }
 }

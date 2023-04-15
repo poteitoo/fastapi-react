@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
-    "lint": "turbo run lint"
+    "lint": "turbo run lint",
+    "depend:install": "pnpm i -r && turbo run depend:install",
+    "depend:update": "pnpm up -r -L && turbo run depend:update"
   },
   "devDependencies": {
     "turbo": "^1.9.1"
