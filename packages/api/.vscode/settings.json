@@ -1,5 +1,5 @@
 {
-    "python.analysis.extraPaths": [
-        "/workspaces/postgres-2/packages/api/.venv/lib/python3.8/site-packages"
-    ]
+  "python.analysis.extraPaths": [
+    "/workspaces/postgres-2/packages/api/.venv/lib/python3.8/site-packages"
+  ]
 }
