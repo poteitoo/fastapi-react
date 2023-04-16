@@ -1,62 +1,64 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/postgres
 {
-	"name": "Python3.8 + PostgreSQL + Node18",
-	"dockerComposeFile": "docker-compose.yaml",
-	"service": "app",
-	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	"features": {
-		"ghcr.io/devcontainers-contrib/features/ripgrep:1": {
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers-contrib/features/fd:1": {
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers/features/aws-cli:1": {
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers/features/github-cli:1": {
-			"installDirectlyFromGitHubRelease": true,
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers/features/node:1": {
-			"nodeGypDependencies": true,
-			"version": "18"
-		},
-		"ghcr.io/devcontainers-contrib/features/amplify-cli:2": {
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers-contrib/features/aws-cdk:2": {
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers-contrib/features/black:2": {
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers-contrib/features/flake8:2": {
-			"version": "latest",
-			"plugins": "flake8-black"
-		},
-		"ghcr.io/devcontainers-contrib/features/isort:2": {
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers-contrib/features/poetry:2": {
-			"version": "latest"
-		}
-	},
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pnpm depend:install",
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// This can be used to network with other containers or the host.
-	// "forwardPorts": [5000, 5432],
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"rangav.vscode-thunder-client",
-				"esbenp.prettier-vscode",
-				"GitHub.vscode-pull-request-github",
-				"mhutchie.git-graph"
-			]
-		}
-	}
+  "name": "Python3.8 + PostgreSQL + Node18",
+  "dockerComposeFile": "docker-compose.yaml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/ripgrep:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-contrib/features/fd:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/aws-cli:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "installDirectlyFromGitHubRelease": true,
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "nodeGypDependencies": true,
+      "version": "18"
+    },
+    "ghcr.io/devcontainers-contrib/features/amplify-cli:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-contrib/features/aws-cdk:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-contrib/features/black:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-contrib/features/flake8:2": {
+      "version": "latest",
+      "plugins": "flake8-black"
+    },
+    "ghcr.io/devcontainers-contrib/features/isort:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-contrib/features/poetry:2": {
+      "version": "latest"
+    }
+  },
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "pnpm depend:install",
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // This can be used to network with other containers or the host.
+  // "forwardPorts": [5000, 5432],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rangav.vscode-thunder-client",
+        "esbenp.prettier-vscode",
+        "GitHub.vscode-pull-request-github",
+        "mhutchie.git-graph",
+        "njpwerner.autodocstring",
+        "usernamehw.errorlens"
+      ]
+    }
+  }
 }
