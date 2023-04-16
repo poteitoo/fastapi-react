@@ -1,0 +1,6 @@
+**/.turbo/
+**/.venv/
+**/node_modules/
+**/.mypy_cache/
+**/pnpm-lock.yaml
+**/poetry.lock

@@ -5,10 +5,12 @@
     "dev": "turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
+    "format": "prettier --fix --config .prettierrc --ignore-path .prettierignore --write \"**/*.{md,json,yaml,yml}\"",
     "depend:install": "pnpm i -r && turbo run depend:install",
     "depend:update": "pnpm up -r -L && turbo run depend:update"
   },
   "devDependencies": {
+    "prettier": "^2.8.7",
     "turbo": "^1.9.1"
   }
 }
