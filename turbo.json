@@ -8,7 +8,9 @@
         },
         "dev": {},
         "lint": {},
-        "depend:install": {},
+        "depend:install": {
+            "cache": false
+        },
         "depend:update": {}
     }
 }
